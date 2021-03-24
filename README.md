@@ -26,3 +26,30 @@
 
 **Copyright © 2020 Captain Pangyo**
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
+
+
+### 타입스크립트란?
+
+---
+
+타입스크립트는 자바스크립트에 타입을 부여한 언어이다. 자바스크립트의 확장된 언어라고 볼 수 있다. 타입스크립트는 자바스크립트와 다르게 브라우저에서 실행하기 위해 파일을 한번 변환해주어야 한다. 이 변환 과정을 우리는 `컴파일(compile)`이라고 부른다.
+
+<br>
+
+### 왜 타입스크립트를 써야하나?
+
+---
+
+타입스크립트는 아래 2가지 관점에서 자바스크립트 코드의 품질과 개발 생산성을 높일 수 있다.
+
+- 에러의 사전 방지
+
+- 코드 가이드 및 자동 완성 (개발 생산성 향상)
+
+
+
+
+
+
+
+자료출처 : https://joshua1988.github.io/ts/intro.html
