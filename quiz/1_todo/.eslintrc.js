@@ -5,10 +5,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['plugin:@typescript-eslint/eslint-recommended', 'plugin:@typescript-eslint/recommended'],
   plugins: ['prettier', '@typescript-eslint'],
   rules: {
     'prettier/prettier': [
@@ -25,6 +22,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-explicit-any': 'off',
     'prefer-const': 'off',
+    'prettier/prettier': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
