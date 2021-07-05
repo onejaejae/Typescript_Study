@@ -1,64 +1,69 @@
 interface User {
-    age : number;
-    name : string;
+    age:number;
+    name:string;
 }
 
-// 변수에 인터페이스 활용
-let seho : User = {
-    age : 33,
-    name : "세호"
+// 변수에 활용하는 인터페이스
+const seho: User ={
+    age : 10,
+    name:"세호"
 }
 
 // 함수에 인터페이스 활용
-const getUser = (user: User) => {
+function getUser(user:User){
     console.log(user)
 }
+
 const capt = {
-    name : "캡틴",
-    age : 10
+    age:10,
+    name:"wonjae"
 }
 getUser(capt)
 
-// 함수의 스펙(구조)에 인터페이스를 활용  
+// 함수의 스펙(구조)에 인터페이스를 활용
 interface sumFunction {
-    (a: number, b: number): number
+    (a:number, b:number):number;
 }
 
-let sum1: sumFunction;
-sum1 = (a: number, b: number): number => {
+let sum:sumFunction
+sum = function(a:number, b:number):number {
     return a+b
 }
 
-// 인덱싱 
+sum(1, 2)
+
+// 인덱싱
 interface StringArray {
-    [index: number]: string
+    [index:number]: string
 }
 
-let arr: StringArray = ['a','b','c']
-arr[0] = "c"
+let arr:StringArray= ['a','b','c']
+arr[0] = '1'
 
 // 딕셔너리 패턴
 interface StringRegexDictionary {
-    [key: string]: RegExp
+    [key:string]: RegExp;
 }
 
-const obj: StringRegexDictionary = {
-    cssFile : /\.css$/,
-    jsFile : /\.js$/
+let obj:StringRegexDictionary = {
+    cssFile:/\.css$/,
+    jsFile:/\.js$/
 }
+
+Object.keys(obj).forEach((value) => {})
 
 // 인터페이스 확장
-interface person {
-    name: string;
-    age: number
+interface Person {
+    age: number,
+    name:string
 }
 
-interface developer extends person {
-    language: string
+interface Developer extends Person {
+    skill:string
 }
 
-const wonjae: developer = {
-    name : "캡틴",
-    age : 25,
-    language : "TS"
+let captin: Developer = {
+    skill : "node",
+    name:"wonjae",
+    age:25
 }
