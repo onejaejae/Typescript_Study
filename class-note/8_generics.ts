@@ -76,4 +76,4 @@
 // logTextLength("a")
 
 // 제너릭 타입 제한 3 - keyof
-
+console.log()
