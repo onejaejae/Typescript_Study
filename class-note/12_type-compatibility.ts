@@ -43,3 +43,5 @@ interface notEmpty<T> {
 
 var notEmpty1:notEmpty<number>;
 var notEmpty2:notEmpty<string>;
+
+notEmpty1 = notEmpty2
